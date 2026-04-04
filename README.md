@@ -1,5 +1,5 @@
 # RSSNet
-This repository includes codes and datasets for the following paper:
+This repository includes datasets for the following paper:
 
 **🚀 A Brain-Inspired Deep Separation Network for Single Channel Raman Spectra Unmixing**
 
@@ -9,4 +9,4 @@ This repository includes codes and datasets for the following paper:
 
 **Paper:**
 
-Codes and datasets are coming soon...
+Datasets are coming soon...
