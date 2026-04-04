@@ -7,6 +7,4 @@ This repository includes datasets for the following paper:
 
 **Authors:** Gaoruishu Long, Jinchao Liu, Bo Liu, Jie Liu & Xiaolin Hu.
 
-**Paper:**
-
 Datasets are coming soon...
