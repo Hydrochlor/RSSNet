@@ -1,0 +1,1 @@
+python3 generate.py --name UNIPR --path dataset/UNIPR-2Mix --seed 42

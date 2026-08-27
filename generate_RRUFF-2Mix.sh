@@ -1,0 +1,1 @@
+python3 generate.py --name RRUFF --path dataset/RRUFF-2Mix --seed 42
