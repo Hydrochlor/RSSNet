@@ -72,3 +72,9 @@ Please cite our paper:
       url={https://arxiv.org/abs/2604.22324}, 
 }
 ```
+
+## License
+
+The source code in this repository is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+
+Please note that datasets and third-party spectral libraries may be subject to their own licenses or terms of use.
