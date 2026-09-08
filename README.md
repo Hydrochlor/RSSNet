@@ -68,6 +68,7 @@ Please cite our paper:
       year={2026},
       eprint={2604.22324},
       archivePrefix={arXiv},
+      
       primaryClass={cs.LG},
       url={https://arxiv.org/abs/2604.22324}, 
 }
@@ -75,6 +76,28 @@ Please cite our paper:
 
 ## License
 
-The source code in this repository is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+This repository is provided under the RSSNet Academic Research and
+Non-Commercial License.
 
-Please note that datasets and third-party spectral libraries may be subject to their own licenses or terms of use.
+The original source code may be used free of charge for academic,
+educational, personal, and other non-commercial research purposes, subject to
+the terms of the [LICENSE](LICENSE) file.
+
+Commercial use, commercial deployment, internal business use, paid research,
+incorporation into a commercial product or service, and other for-profit use
+require prior written authorization from Nankai University or its authorized
+representative.
+
+For licensing inquiries, please contact:
+
+- Project contact: Jinchao Liu
+- Email: liujinchao@nankai.edu.cn
+
+Contacting the project contact does not itself constitute commercial
+authorization. Commercial authorization is valid only when issued in writing
+by Nankai University or its authorized representative.
+
+Datasets, pretrained models, external spectral libraries, third-party code,
+and other externally obtained materials may be subject to separate licenses
+and terms of use. This license does not apply to materials that are not owned
+or controlled by the applicable rights holder.
