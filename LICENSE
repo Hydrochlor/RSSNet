@@ -1,345 +1,201 @@
-RSSNet Academic Research and Non-Commercial License
-Version 1.0
-
-Copyright (c) [2026] Nankai University.
-All rights reserved.
-
-Project:
-A Brain-Inspired Deep Separation Network for Single Channel Raman Spectra Unmixing
-
-Patent applicant:
-Nankai University
-
-Granted patent:
-Patent No. CN120992583B
-Official title: A Single Channel Raman Spectroscopy Unmixing Method
-
-Inventors listed in the patent application:
-1. Jinchao Liu
-2. Gaoruishu Long
-3. Yongchun Fang
-
-IMPORTANT NOTICE
-
-This is a custom academic and non-commercial license. It is not an
-OSI-approved open source license.
-
-The Software may be used free of charge for academic, educational, personal,
-and other non-commercial research purposes only, subject to the terms of this
-License. Commercial use of the Software or its algorithms requires prior
-written authorization from the applicable rights holder.
-
-1. Definitions
-
-"Software" means the original source code, scripts, configuration files,
-documentation, examples, and other original materials included in this
-repository that are owned or controlled by the Licensor.
-
-"Licensor" means Nankai University, or any other rights holder authorized in
-writing by Nankai University to grant rights under this License.
-
-"Academic Non-Commercial Research" means use of the Software for personal
-study, academic research, teaching, education, scientific experimentation,
-reproduction of academic results, a thesis, dissertation, or scholarly
-publication, provided that the use is not intended to generate commercial
-revenue or commercial advantage.
-
-Academic Non-Commercial Research may include use by students, teachers,
-universities, academic laboratories, non-profit research organizations, and
-individual researchers, provided that the use is not conducted as part of a
-commercial product, commercial service, commercial deployment, or other
-for-profit activity.
-
-"Commercial Use" means any use intended to generate commercial revenue,
-commercial advantage, or financial benefit. Commercial Use includes, but is
-not limited to:
-
-(a) incorporating the Software or its algorithms into a commercial product,
-    commercial software, device, model, platform, or system;
-
-(b) deploying the Software or its algorithms in a commercial environment or
-    for a commercial organization;
-
-(c) using the Software for internal business operations, commercial research,
-    product development, or service development;
-
-(d) using the Software in paid research, contract research, consulting,
-    outsourced development, or commissioned technical work;
-
-(e) offering the functionality of the Software as a paid service, hosted
-    service, API, platform, or subscription;
-
-(f) selling, sublicensing, renting, leasing, or otherwise commercially
-    exploiting the Software or its algorithms; or
-
-(g) using the Software or its algorithms to develop, train, test, operate, or
-    improve a commercial product, commercial model, or commercial service.
-
-"Modification" means any change, adaptation, translation, derivative work,
-or other alteration of the Software.
-
-"Patent Rights" means patent rights owned or controlled by the Licensor that
-cover the Software or the methods implemented by the Software, including the
-granted patent identified in this License, to the extent that the Licensor has
-the legal authority to grant the relevant rights.
-
-2. Copyright License for Academic Non-Commercial Research
-
-Subject to the terms and conditions of this License, the Licensor grants you a
-worldwide, royalty-free, non-exclusive, non-transferable license to use,
-reproduce, execute, study, modify, and distribute the Software solely for
-Academic Non-Commercial Research.
-
-You may:
-
-(a) download and use the Software for academic, educational, personal, and
-    non-commercial research purposes;
-
-(b) modify the Software for such purposes;
-
-(c) conduct experiments and reproduce academic results using the Software;
-
-(d) publish academic papers, theses, dissertations, reports, and other
-    scholarly materials describing results obtained using the Software; and
-
-(e) share the original Software or Modifications with academic collaborators
-    for Academic Non-Commercial Research, provided that the recipient receives
-    a copy of this License and is bound by its terms.
-
-No fee is required for the rights expressly granted for Academic
-Non-Commercial Research.
-
-3. Conditions for Permitted Use
-
-Any permitted copy, publication, distribution, or Modification of the
-Software must:
-
-(a) include a copy of this License;
-
-(b) retain all existing copyright, authorship, attribution, patent, and
-    citation notices;
-
-(c) clearly indicate any Modifications made to the Software;
-
-(d) identify the original Software as the basis of the copy or Modification;
-    and
-
-(e) include a reference to the original repository:
-
-    https://github.com/Hydrochlor/RSSNet
-
-When the Software is used in academic research or a scholarly publication,
-you must cite the corresponding paper and acknowledge the original authors:
-
-Jinchao Liu, Gaoruishu Long, Yongchun Fang, and the other authors identified
-in the corresponding publication.
-
-If the corresponding paper provides a specific citation format, that format
-should be used.
-
-4. Commercial Use Requires Prior Written Authorization
-
-The rights granted by this License do not include Commercial Use.
-
-You must obtain prior written authorization before using the Software or its
-algorithms for any Commercial Use. Commercial authorization may be granted
-only by Nankai University or by a representative who has been expressly
-authorized in writing by Nankai University.
-
-Commercial authorization may be subject to a separate commercial license,
-additional conditions, technical restrictions, royalties, or licensing fees.
-
-Downloading, viewing, copying, or accessing this repository does not grant
-any Commercial Use rights.
-
-Project licensing inquiries may be directed to:
-
-Project contact: Jinchao Liu
-Email: liujinchao@nankai.edu.cn
-
-The project contact may help coordinate licensing inquiries, but contacting
-the project contact does not itself constitute Commercial Use authorization.
-Commercial authorization is valid only if it is issued in writing by Nankai
-University or its authorized representative.
-
-5. Patent License for Academic Non-Commercial Research
-
-Subject to the terms and conditions of this License, the Licensor grants you a
-worldwide, royalty-free, non-exclusive, non-transferable patent license under
-the Patent Rights solely for Academic Non-Commercial Research.
-
-This limited patent license permits you to make, use, implement, execute, and
-test the methods covered by the Patent Rights solely for Academic
-Non-Commercial Research.
-
-This patent license does not permit Commercial Use, including commercial
-manufacture, commercial deployment, commercial distribution, commercial
-operation, commercial service provision, or incorporation into a commercial
-product or service.
-
-Any Commercial Use that may be covered by the Patent Rights requires a
-separate written patent license or commercial authorization from Nankai
-University or its authorized representative.
-
-This License does not grant any license or rights under:
-
-(a) patents owned or controlled by third parties;
-
-(b) patent claims that are not owned or controlled by the Licensor;
-
-(c) trademarks, service marks, or trade names; or
-
-(d) any patent, copyright, or other intellectual-property right covering
-    third-party materials.
-
-The patent information included in this License is provided for identification
-and attribution purposes. It does not expand the scope of the Patent Rights,
-replace the official patent documents, or guarantee that a particular use is
-not covered by another patent.
-
-6. Restrictions
-
-Except as expressly permitted by this License, you may not:
-
-(a) use the Software or its algorithms for Commercial Use;
-
-(b) sell, sublicense, rent, lease, or commercially distribute the Software;
-
-(c) incorporate the Software or its algorithms into a commercial product,
-    commercial service, commercial model, commercial platform, or commercial
-    system;
-
-(d) offer the functionality of the Software as a paid service or for
-    commercial advantage;
-
-(e) use the Software for internal business operations or commercial product
-    development;
-
-(f) remove, alter, or conceal copyright, authorship, attribution, patent, or
-    citation notices;
-
-(g) redistribute the Software or any Modification under a license that permits
-    Commercial Use;
-
-(h) claim that you are the original author or rights holder of the Software or
-    the underlying patented methods; or
-
-(i) use the names, logos, trademarks, or institutional identity of Nankai
-    University or the authors to imply endorsement, sponsorship, or official
-    affiliation without prior written permission.
-
-7. Third-Party Materials
-
-This License applies only to original materials in the repository that are
-owned or controlled by the Licensor.
-
-Datasets, pretrained models, spectral libraries, external files, third-party
-software, dependencies, code copied or adapted from other projects, and other
-materials obtained from external sources may be subject to separate licenses,
-copyrights, patent rights, terms of use, or access restrictions.
-
-In particular, materials associated with RRUFF, UNIPR, RRUFF-2Mix,
-UNIPR-2Mix, or any other external dataset or spectral library are not covered
-by this License unless the Licensor expressly states otherwise and has the
-legal authority to grant such rights.
-
-This License does not modify, replace, or override any third-party license or
-term of use. You are solely responsible for identifying and complying with
-the applicable terms for third-party materials.
-
-8. Academic Publications
-
-You may publish academic papers, theses, dissertations, reports, benchmarks,
-and other scholarly materials describing results obtained using the Software,
-provided that:
-
-(a) the publication complies with this License;
-
-(b) the original authors and the Software are properly acknowledged;
-
-(c) the corresponding paper is properly cited; and
-
-(d) publication of the results does not grant or imply any Commercial Use
-    rights in the Software, algorithms, or Patent Rights.
-
-Publication of experimental results does not transfer ownership of the
-Software, algorithms, copyrights, Patent Rights, or any other intellectual
-property.
-
-9. Ownership and Reservation of Rights
-
-The Software, its original source code, documentation, algorithms, and related
-intellectual property remain the property of their respective rights holders.
-
-This License does not transfer ownership of any copyright, patent, trade
-secret, trademark, or other intellectual-property right.
-
-All rights not expressly granted under this License are reserved by the
-applicable rights holder.
-
-Being listed as an inventor does not by itself grant any individual authority
-to transfer, license, or waive rights owned by Nankai University. Any
-authorization on behalf of Nankai University must be issued by Nankai
-University or its duly authorized representative.
-
-10. No Trademark License
-
-This License does not grant any right to use the names, trademarks, service
-marks, logos, or other branding of Nankai University, the authors, their
-institutions, or any associated conference or publication, except as
-reasonably necessary for factual attribution and academic citation.
-
-11. Disclaimer of Warranty
-
-THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY
-KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT,
-ACCURACY, OR RELIABILITY.
-
-THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL OPERATE WITHOUT
-INTERRUPTION, MEET YOUR REQUIREMENTS, OR BE FREE FROM ERRORS OR SECURITY
-VULNERABILITIES.
-
-12. Limitation of Liability
-
-TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR AND THE
-AUTHORS SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-CONSEQUENTIAL, EXEMPLARY, OR OTHER DAMAGES ARISING FROM OR RELATED TO THE
-SOFTWARE, THE PATENT RIGHTS, THIS LICENSE, OR THE USE OR INABILITY TO USE THE
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-
-13. Termination
-
-This License automatically terminates if you violate any of its terms.
-
-Upon termination, you must immediately stop using, reproducing, modifying, and
-distributing the Software, except to the extent that applicable law requires
-otherwise.
-
-Termination does not affect rights granted to recipients who received the
-Software in compliance with this License before termination, provided that
-those recipients continue to comply with this License.
-
-14. Contact and Separate Licensing
-
-Requests concerning Commercial Use, commercial patent licensing, exceptions
-to this License, or other permissions outside the scope of this License must
-be submitted in writing to the applicable rights holder or its authorized
-representative.
-
-Project contact:
-
-Jinchao Liu
-Email: liujinchao@nankai.edu.cn
-
-1.  Entire License
-
-This License contains the entire agreement concerning the rights granted to
-the Software under this License. Any additional permission must be provided
-in writing by the applicable rights holder.
-
-If any provision of this License is held to be unenforceable, the remaining
-provisions will remain in effect to the maximum extent permitted by law.
-
-No failure to enforce any provision of this License constitutes a waiver of
-that provision.
+                                 Apache License
+                           Version 2.0, January 2004
+                        http://www.apache.org/licenses/
+
+   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
