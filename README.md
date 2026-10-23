@@ -74,30 +74,13 @@ Please cite our paper:
 }
 ```
 
-## License
+## Intellectual Property Statement
+The source code is licensed under Apache License 2.0.
 
-This repository is provided under the RSSNet Academic Research and
-Non-Commercial License.
+This work is accompanied by a published paper and granted patents.
 
-The original source code may be used free of charge for academic,
-educational, personal, and other non-commercial research purposes, subject to
-the terms of the [LICENSE](LICENSE) file.
-
-Commercial use, commercial deployment, internal business use, paid research,
-incorporation into a commercial product or service, and other for-profit use
-require prior written authorization from Nankai University or its authorized
-representative.
-
-For licensing inquiries, please contact:
-
-- Project contact: Jinchao Liu
-- Email: liujinchao@nankai.edu.cn
-
-Contacting the project contact does not itself constitute commercial
-authorization. Commercial authorization is valid only when issued in writing
-by Nankai University or its authorized representative.
-
-Datasets, pretrained models, external spectral libraries, third-party code,
-and other externally obtained materials may be subject to separate licenses
-and terms of use. This license does not apply to materials that are not owned
-or controlled by the applicable rights holder.
+- The Apache 2.0 license grants copyright license and a limited patent license **only for executing this distributed software**.
+  
+- Separate commercial patent licensing is available for scenarios outside the scope of this open-source license (e.g., integrating the patented method into closed-source commercial products, hardware devices, independent algorithm modules without using this open-source code).
+  
+- For academic citation, please refer to our published paper.
