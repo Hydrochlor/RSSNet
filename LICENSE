@@ -1,201 +1,598 @@
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+RSSNet Academic Research and Non-Commercial License
+Version 1.4 — 24 October 2026
 
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+Copyright (c) 2026 Nankai University.
+All rights reserved except as expressly granted below.
 
-   1. Definitions.
+Project:
+A Brain-Inspired Deep Separation Network for Single Channel Raman Spectra Unmixing
 
-      "License" shall mean the terms and conditions for use, reproduction,
-      and distribution as defined by Sections 1 through 9 of this document.
+IMPORTANT NOTICE
 
-      "Licensor" shall mean the copyright owner or entity authorized by
-      the copyright owner that is granting the License.
+This is a custom source-available license for non-commercial academic
+research and education. It is not an OSI-approved open-source license.
+Commercial Use requires a separate written agreement.
 
-      "Legal Entity" shall mean the union of the acting entity and all
-      other entities that control, are controlled by, or are under common
-      control with that entity. For the purposes of this definition,
-      "control" means (i) the power, direct or indirect, to cause the
-      direction or management of such entity, whether by contract or
-      otherwise, or (ii) ownership of fifty percent (50%) or more of the
-      outstanding shares, or (iii) beneficial ownership of such entity.
+IMPORTANT CONDITIONS: Public research publications must cite the identified
+paper (section 7.1). Creating or receiving Research Models requires express
+acceptance of the Research Model Terms (sections 2.2 and 7.3); later
+commercial use of those models requires separate authorization even if the
+Software is no longer used. Redistribution and third-party restrictions
+apply (sections 3 and 6). Warranty and liability limits, termination, and
+choice of law and court are in sections 9, 10, and 12. Read these provisions
+before accepting; questions may be sent to the contact in section 5. Mere
+access to a repository or file is not, by itself, express acceptance.
 
-      "You" (or "Your") shall mean an individual or Legal Entity
-      exercising permissions granted by this License.
+1. Definitions and Scope
 
-      "Source" form shall mean the preferred form for making modifications,
-      including but not limited to software source code, documentation
-      source, and configuration files.
+"Licensor" means Nankai University. An authorized representative may act for
+the Licensor only within the scope of its written authorization.
 
-      "Object" form shall mean any form resulting from mechanical
-      transformation or translation of a Source form, including but
-      not limited to compiled object code, generated documentation,
-      and conversions to other media types.
+"You" and "Your" mean the individual or legal entity exercising the
+permissions or accepting the obligations in this license. A person accepting
+for an entity must have authority to bind that entity.
 
-      "Work" shall mean the work of authorship, whether in Source or
-      Object form, made available under the License, as indicated by a
-      copyright notice that is included in or attached to the work
-      (an example is provided in the Appendix below).
+"Software" means the original source code, scripts, configuration files,
+documentation, examples, and Project Model Weights distributed with this
+license, but only to the extent that the Licensor owns or is authorized to
+license them. Excluded materials are described in section 6. This license
+applies to the version distributed with it and does not change rights
+validly granted under any earlier or separate license.
 
-      "Derivative Works" shall mean any work, whether in Source or Object
-      form, that is based on (or derived from) the Work and for which the
-      editorial revisions, annotations, elaborations, or other modifications
-      represent, as a whole, an original work of authorship. For the purposes
-      of this License, Derivative Works shall not include works that remain
-      separable from, or merely link (or bind by name) to the interfaces of,
-      the Work and Derivative Works thereof.
+"Project Model Weights" means original RSSNet model weights and checkpoints
+supplied by the Licensor with this license, to the extent that the Licensor
+owns or is authorized to license the relevant rights. Materials identified
+as third-party materials or supplied under a separate license are excluded.
+Merely hosting or linking to weights does not make them Project Model
+Weights.
 
-      "Contribution" shall mean any work of authorship, including
-      the original version of the Work and any modifications or additions
-      to that Work or Derivative Works thereof, that is intentionally
-      submitted to Licensor for inclusion in the Work by the copyright owner
-      or by an individual or Legal Entity authorized to submit on behalf of
-      the copyright owner. For the purposes of this definition, "submitted"
-      means any form of electronic, verbal, or written communication sent
-      to the Licensor or its representatives, including but not limited to
-      communication on electronic mailing lists, source code control systems,
-      and issue tracking systems that are managed by, or on behalf of, the
-      Licensor for the purpose of discussing and improving the Work, but
-      excluding communication that is conspicuously marked or otherwise
-      designated in writing by the copyright owner as "Not a Contribution."
+"Research Model" means a model, including its weights and checkpoints,
+created through any of the following activities undertaken in reliance on
+the permissions in this license:
+  (a) using Software or Modifications as part of its training or fine-tuning
+      pipeline to compute or update that model's parameters;
+  (b) incorporating, initializing from, adapting, or fine-tuning Project
+      Model Weights or an existing Research Model; or
+  (c) deliberately using Software, Modifications, Project Model Weights, or
+      a Research Model to generate teacher targets, pseudo-labels, or
+      intermediate features specifically to train that model, including
+      through distillation, whether generation and training are simultaneous
+      or performed in separate stages.
+Later versions that retain or adapt such parameters, including pruned,
+quantized, or merged versions, and models produced by the activities above
+using a Research Model, remain Research Models.
 
-      "Contributor" shall mean Licensor and any individual or Legal Entity
-      on behalf of whom a Contribution has been received by Licensor and
-      subsequently incorporated within the Work.
+A model is not a Research Model merely because it is compared with RSSNet,
+is evaluated using RSSNet without training or adapting its parameters, is
+discussed in the same publication, or follows ideas described in a paper.
+Ordinary inference outputs, spectra, measurements, figures, tables, and
+publications are not themselves Research Models. Using independently
+available ordinary research outputs as data does not by itself make another
+model a Research Model; paragraph (c) applies to deliberate generation of
+training signals for that model, not incidental reuse of such outputs.
 
-   2. Grant of Copyright License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      copyright license to reproduce, prepare Derivative Works of,
-      publicly display, publicly perform, sublicense, and distribute the
-      Work and such Derivative Works in Source or Object form.
+A genuinely independent retraining is outside this definition if it uses
+independently implemented training code, does not incorporate or adapt
+Software, Project Model Weights, or Research Model parameters, and does not
+use the teacher targets, pseudo-labels, or intermediate features described
+in paragraph (c) for that retraining. Merely resetting parameters while
+continuing to train with the Software is not independent retraining. This
+exclusion does not waive any independently applicable patent, data, or
+third-party rights.
 
-   3. Grant of Patent License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      (except as stated in this section) patent license to make, have made,
-      use, offer to sell, sell, import, and otherwise transfer the Work,
-      where such license applies only to those patent claims licensable
-      by such Contributor that are necessarily infringed by their
-      Contribution(s) alone or by combination of their Contribution(s)
-      with the Work to which such Contribution(s) was submitted. If You
-      institute patent litigation against any entity (including a
-      cross-claim or counterclaim in a lawsuit) alleging that the Work
-      or a Contribution incorporated within the Work constitutes direct
-      or contributory patent infringement, then any patent licenses
-      granted to You under this License for that Work shall terminate
-      as of the date such litigation is filed.
+"Modification" means a modification, adaptation, translation, or derivative
+work that incorporates copyright-protected expression from the Software. An
+independent implementation does not become a Modification merely because it
+uses similar ideas, methods, mathematical concepts, or algorithms.
 
-   4. Redistribution. You may reproduce and distribute copies of the
-      Work or Derivative Works thereof in any medium, with or without
-      modifications, and in Source or Object form, provided that You
-      meet the following conditions:
+"Academic Non-Commercial Use" means personal academic study, teaching,
+scientific research, reproduction or evaluation of research results, and
+preparation of academic publications by individuals, educational
+institutions, or non-profit research institutions, solely for academic or
+educational purposes and not for Commercial Use.
 
-      (a) You must give any other recipients of the Work or
-          Derivative Works a copy of this License; and
+Receiving an ordinary academic salary, stipend, scholarship, government
+research grant, or non-profit research grant does not by itself make a use
+commercial. The actual purpose and activities must still satisfy this
+license. A university affiliation or publication of results does not by
+itself make a use non-commercial.
 
-      (b) You must cause any modified files to carry prominent notices
-          stating that You changed the files; and
+"Commercial Use" includes:
+  (a) use by or on behalf of a commercial business for its research,
+      development, evaluation, internal operations, or other business needs;
+  (b) development, incorporation, testing, or deployment of the Software or
+      Modifications in a commercial product, device, model, or service;
+  (c) paid analysis, consulting, outsourced development, or commissioned
+      technical work for a commercial purpose;
+  (d) selling, renting, leasing, or commercially distributing the Software
+      or Modifications, or providing their functionality as a commercial
+      hosted service, API, platform, or subscription; and
+  (e) using the Software or Modifications to train, test, operate, or improve
+      a model intended for commercial use.
+A person's employment by a business does not by itself make genuinely
+independent personal academic study commercial; work undertaken for that
+business's needs remains within paragraph (a). Industrial quality control
+and paid contract analysis for commercial purposes are examples of
+Commercial Use. A hospital or other non-profit affiliation does not itself
+authorize clinical or operational use: use outside Academic Non-Commercial
+Use requires separate permission even if it is not profit-making.
 
-      (c) You must retain, in the Source form of any Derivative Works
-          that You distribute, all copyright, patent, trademark, and
-          attribution notices from the Source form of the Work,
-          excluding those notices that do not pertain to any part of
-          the Derivative Works; and
+These activities require separate permission whether or not the Software
+itself is sold or supplied to customers. Research commissioned or funded by
+a commercial business also requires separate written permission unless the
+Licensor expressly confirms in writing that the specific research is
+permitted under this license.
 
-      (d) If the Work includes a "NOTICE" text file as part of its
-          distribution, then any Derivative Works that You distribute must
-          include a readable copy of the attribution notices contained
-          within such NOTICE file, excluding those notices that do not
-          pertain to any part of the Derivative Works, in at least one
-          of the following places: within a NOTICE text file distributed
-          as part of the Derivative Works; within the Source form or
-          documentation, if provided along with the Derivative Works; or,
-          within a display generated by the Derivative Works, if and
-          wherever such third-party notices normally appear. The contents
-          of the NOTICE file are for informational purposes only and
-          do not modify the License. You may add Your own attribution
-          notices within Derivative Works that You distribute, alongside
-          or as an addendum to the NOTICE text from the Work, provided
-          that such additional attribution notices cannot be construed
-          as modifying the License.
+2. Permissions and Acceptance
 
-      You may add Your own copyright statement to Your modifications and
-      may provide additional or different license terms and conditions
-      for use, reproduction, or distribution of Your modifications, or
-      for any such Derivative Works as a whole, provided Your use,
-      reproduction, and distribution of the Work otherwise complies with
-      the conditions stated in this License.
+2.1 Copyright and use permission
 
-   5. Submission of Contributions. Unless You explicitly state otherwise,
-      any Contribution intentionally submitted for inclusion in the Work
-      by You to the Licensor shall be under the terms and conditions of
-      this License, without any additional terms or conditions.
-      Notwithstanding the above, nothing herein shall supersede or modify
-      the terms of any separate license agreement you may have executed
-      with Licensor regarding such Contributions.
+Subject to this license, the Licensor grants you a worldwide, royalty-free,
+non-exclusive copyright license to reproduce, execute, study, and modify the
+Software solely for Academic Non-Commercial Use, and to redistribute the
+Software and Modifications under section 3. For Project Model Weights, this
+permission includes loading, running inference, evaluating, and fine-tuning
+them for those purposes, subject to the rights and conditions specified
+here. This permission does not assert that every model weight or output is
+protected by copyright.
 
-   6. Trademarks. This License does not grant permission to use the trade
-      names, trademarks, service marks, or product names of the Licensor,
-      except as required for reasonable and customary use in describing the
-      origin of the Work and reproducing the content of the NOTICE file.
+No Commercial Use permission is granted by this license. Permission for
+Commercial Use must be obtained before that use begins. Nothing in this
+license limits any use independently permitted by applicable law.
 
-   7. Disclaimer of Warranty. Unless required by applicable law or
-      agreed to in writing, Licensor provides the Work (and each
-      Contributor provides its Contributions) on an "AS IS" BASIS,
-      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-      implied, including, without limitation, any warranties or conditions
-      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
-      PARTICULAR PURPOSE. You are solely responsible for determining the
-      appropriateness of using or redistributing the Work and assume any
-      risks associated with Your exercise of permissions under this License.
+For activities that require the permissions granted here, acceptance may be
+evidenced by knowingly exercising those permissions after receiving this
+license and reasonable notice of its applicable conditions, to the extent
+recognized by applicable law. This does not replace the express acceptance
+required by section 2.2. You need not accept this license to exercise rights
+independently available under applicable law.
 
-   8. Limitation of Liability. In no event and under no legal theory,
-      whether in tort (including negligence), contract, or otherwise,
-      unless required by applicable law (such as deliberate and grossly
-      negligent acts) or agreed to in writing, shall any Contributor be
-      liable to You for damages, including any direct, indirect, special,
-      incidental, or consequential damages of any character arising as a
-      result of this License or out of the use or inability to use the
-      Work (including but not limited to damages for loss of goodwill,
-      work stoppage, computer failure or malfunction, or any and all
-      other commercial damages or losses), even if such Contributor
-      has been advised of the possibility of such damages.
+2.2 Express acceptance for Research Models
 
-   9. Accepting Warranty or Additional Liability. While redistributing
-      the Work or Derivative Works thereof, You may choose to offer,
-      and charge a fee for, acceptance of support, warranty, indemnity,
-      or other liability obligations and/or rights consistent with this
-      License. However, in accepting such obligations, You may act only
-      on Your own behalf and on Your sole responsibility, not on behalf
-      of any other Contributor, and only if You agree to indemnify,
-      defend, and hold each Contributor harmless for any liability
-      incurred by, or claims asserted against, such Contributor by reason
-      of your accepting any such warranty or additional liability.
+Before using these permissions to undertake an activity that creates a
+Research Model, You must expressly accept the Research Model Terms. A
+recipient must do so before receiving a Research Model under section 7.3.
+"Research Model Terms" means sections 1, 2.2, 4, 5, 7, 8, 9, 10, 11, and 12
+insofar as they apply to Research Models. This collective name includes the
+applicable patent permissions as well as acceptance, use, citation,
+transfer, ownership, commercial-authorization, warranty, liability,
+termination, general, and dispute provisions. It does not expand the scope
+of any intellectual-property permission. Where a model includes Software or
+Modifications, sections 2.1 and 3 also apply to those included materials.
 
-   END OF TERMS AND CONDITIONS
+Acceptance must be evidenced by an affirmative electronic acknowledgment, a
+signed statement, or another provable express agreement identifying RSSNet
+License version 1.4 and the Research Model Terms. Before the acknowledgment,
+make this license available and prominently identify the
+later-commercial-use restriction, onward-transfer and citation conditions,
+liability limits, and choice of law and court. Provide a reasonable
+opportunity to read the terms and request an explanation. Do not use a
+preselected acceptance box or infer express acceptance from silence.
 
-   APPENDIX: How to apply the Apache License to your work.
+For a model creator, an express acceptance identifying the creator and this
+version may be sent to the project contact in section 5, or recorded through
+a license-acceptance facility provided by the Licensor or an authorized
+distributor. For a model recipient, acceptance may be recorded by the
+transferor. Retain the accepted terms, version, affirmative acknowledgment,
+and sufficient information to identify the accepting party and date, in
+accordance with applicable privacy and record-retention law. Express
+acceptance is not a commercial permission request and requires no separate
+commercial approval for otherwise permitted academic activities. A
+recipient's acceptance does not validate a transferor's ownership or cure
+missing third-party permissions.
 
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
-      replaced with your own identifying information. (Don't include
-      the brackets!)  The text should be enclosed in the appropriate
-      comment syntax for the file format. We also recommend that a
-      file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
-      identification within third-party archives.
+3. Redistribution
 
-   Copyright [2026] [Nankai University]
+You may redistribute the Software and Modifications, in source or executable
+form, to academic collaborators or through public repositories and archives,
+solely to enable Academic Non-Commercial Use, provided that you:
+  (a) include this complete license with each distribution;
+  (b) retain relevant copyright, attribution, and patent notices;
+  (c) prominently identify changes you have made;
+  (d) identify RSSNet and its original repository as the source:
+      https://github.com/Hydrochlor/RSSNet;
+  (e) distribute Modifications under this same license, without granting
+      recipients broader rights in the original Software;
+  (f) for contributions to a Modification that you own or are authorized to
+      license, grant each recipient a direct, worldwide, royalty-free,
+      non-exclusive copyright license on the same copyright-permission and
+      use-restriction terms as this license. Identify the relevant copyright
+      holder and retain its notices. This contribution grant does not make
+      the Licensor the owner or licensing agent of your contributions and
+      does not add any contributor patent rights to section 4; and
+  (g) do not impose additional legal or technical restrictions on recipients'
+      exercise of the permissions expressly granted in the covered Software
+      or Modifications. This does not expand their rights or displace the
+      acceptance requirements in section 2.2 and separate third-party terms.
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+Redistribution must be free of license fees or profit. You may recover only
+actual, reasonable physical-media and delivery costs, without a markup. This
+narrow cost-recovery exception is not Commercial Use by itself and does not
+authorize charging for software access, hosted functionality, consulting,
+training, or analysis services.
 
-       http://www.apache.org/licenses/LICENSE-2.0
+An inaccessible or renamed source repository does not waive attribution:
+retain the project name and the source URL supplied with the received
+version, and add a verified successor URL if known. A repository host or
+personal account is not by itself evidence of authority to license.
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+For executable distributions, provide the license and notices in
+accompanying documentation or another readily accessible location. This
+license does not require you to distribute your private Modifications or to
+provide source code when distributing executables. Any separate obligations
+for third-party components remain applicable.
+
+Each recipient receives permission in the original Software directly from
+the Licensor under this license, subject to section 2. Mere public access
+does not grant commercial rights. This section does not impose this license
+on separate, independent works that do not incorporate the Software.
+Research Models remain subject to the separate contractual conditions in
+section 7; this does not by itself classify them as Modifications.
+
+4. Patent Permission and Algorithm Scope
+
+The patent identified for this project is:
+  Jurisdiction: China
+  Application number: CN202511517371.1
+  Application date: 23 October 2025
+  Grant publication identifier: CN120992583B
+  Grant publication date: 16 December 2025
+  Title: 一种单通道拉曼光谱解混方法
+         (A Single Channel Raman Spectroscopy Unmixing Method)
+
+"Licensed Patent Claims" means only enforceable claims of the identified
+patent that the Licensor owns or is authorized to license and that are
+necessarily practiced by the Software as supplied by the Licensor.
+
+Subject to this license, the Licensor grants you a royalty-free,
+non-exclusive license under the Licensed Patent Claims to make and use
+implementations solely as necessary to execute, implement, evaluate, and
+test the Software, Modifications, and Research Models for Academic
+Non-Commercial Use. This includes running a Research Model through a
+separate inference implementation, to the extent it practices those same
+Licensed Patent Claims. It does not add any patent claims. The grant applies
+only where those claims have legal effect. Modifying, retraining, or
+combining materials does not add further patent claims or authorize
+Commercial Use.
+
+Except for running Research Models as expressly permitted above, this
+license grants no patent permission for independent implementations that do
+not use the Software. It grants no patent permission for Commercial Use,
+other patents, or third-party patents. Additional patent permission, where
+required, must be obtained from the relevant rights holder. Whether an
+independent implementation needs such permission depends on the applicable
+patent claims, existing permissions, and applicable law; this license does
+not itself create exclusive rights over abstract ideas, methods, or
+algorithms.
+
+The patent reference does not guarantee current ownership, validity,
+enforceability, or freedom from third-party rights. The official patent
+records and applicable law govern patent status and scope. Statutory
+exceptions, limitations, and defenses remain available.
+
+5. Separate Commercial Authorization
+
+Commercial permission for the Software may be granted only by the Licensor
+or its duly authorized representative in a separate written agreement. That
+agreement must identify the software and any patent or other rights being
+licensed. Permission for software alone does not imply permission for
+excluded datasets, model weights, or third-party materials. Any agreement
+authorizing commercial use of a Research Model must identify that model and
+expressly authorize the activities otherwise restricted by section 7.
+Permission from the Licensor does not replace permission needed for another
+contributor's code or other separately owned rights.
+
+Contacting the project, receiving no reply, or citing the paper does not
+grant commercial permission. A separate agreement may specify fees,
+royalties, or other conditions.
+
+Project contact: Jinchao Liu
+Email: liujinchao@nankai.edu.cn
+
+The project contact coordinates inquiries and routes requests requiring
+institutional approval to the relevant University authority. An acceptance
+record sent under section 2.2 does not give the project contact authority to
+grant Commercial Use rights. Being an author or inventor does not by itself
+authorize that person to license rights held by the University or another
+rights holder.
+
+6. Third-Party Materials, Data, and Model Weights
+
+This license does not relicense third-party code, dependencies, spectral
+libraries, datasets, pretrained model weights, papers, or other materials
+that the Licensor does not own or have authority to license.
+
+The original RRUFF and UNIPR spectral libraries and third-party model
+weights are outside this license. The project-generated RRUFF-2Mix and
+UNIPR-2Mix datasets are also outside this software license; their status as
+project-generated datasets does not establish unrestricted rights in the
+underlying spectra. Use and redistribution of each dataset require its
+separately applicable permission, including any upstream conditions. This
+license supplies no dataset permission merely because a dataset is hosted
+in, linked from, or described as available with the project.
+
+Project Model Weights, as defined in section 1, are included in sections 2
+and 3; weights supplied under separate terms remain subject to those terms.
+A claim that weights were trained by the project does not override
+applicable rights or restrictions in training materials. Permission to use
+generation scripts does not itself grant permission to use or redistribute
+their input data or generated datasets.
+
+See DATASETS.md, if supplied, for dataset-specific permission and access
+information available with the release. A distribution containing dataset
+files must identify their source and applicable permission in DATASETS.md or
+an equivalent accompanying dataset notice. Unconfirmed permissions must not
+be represented as granted. If no applicable permission is identified, this
+software license supplies none. Code availability does not guarantee
+permission or access to every dataset used in a publication.
+
+Distributions must preserve applicable third-party license and attribution
+notices and identify included separately licensed materials in a NOTICE or
+equivalent accompanying record, with their source and applicable terms. Such
+a record documents permissions; it cannot create missing permissions. Any
+included paper, website asset, or dependency retains its own applicable
+terms. Merely listing a dependency does not resolve license compatibility;
+compatibility must be assessed for the actual incorporation and
+distribution.
+
+Separate licenses and notices for those materials continue to apply.
+Distribution of the Software does not override any party's obligations to
+identify, preserve, and comply with applicable third-party terms.
+
+7. Academic Publications, Results, Research Models, and Attribution
+
+7.1 Mandatory citation for public research publications
+
+You may publish research results obtained through permitted use of the
+Software, subject to any independently applicable rights in included
+materials and the following citation condition.
+
+If you publicly publish a paper, thesis, dissertation, report, benchmark, or
+other scholarly work reporting results obtained using the Software,
+Modifications, or Research Models, you must acknowledge RSSNet and cite:
+
+Gaoruishu Long, Jinchao Liu, Bo Liu, Jie Liu, and Xiaolin Hu.
+A Brain-Inspired Deep Separation Network for Single Channel Raman Spectra Unmixing.
+arXiv:2604.22324, 2026. https://doi.org/10.48550/arXiv.2604.22324
+
+This citation and acknowledgement requirement is a condition of the
+permissions granted by this license. Use the publication venue's normal
+citation format, identifying the paper by its title and authors, and include
+the arXiv identifier or DOI above. A verified final published citation to
+the same paper may be used instead. Citation details in README.md or
+CITATION.cff may be used. If those files are missing or incomplete, the
+authors, title, year, and arXiv identifier above suffice. Acknowledgement of
+RSSNet may be included in the methods, acknowledgements, or other
+appropriate part of the publication. No acknowledgement of endorsement or
+attribution of coauthorship is required.
+
+Private study, unpublished experiments, and internal research notes do not
+require a formal paper citation. Retention of notices on redistribution is
+separately required by section 3. Omissions are subject to section 10.
+
+7.2 Research results and ownership
+
+This license does not transfer ownership of your independently created
+research results or claim ownership of factual outputs merely because the
+Software was used. Ordinary inference outputs, spectra, measurements,
+figures, tables, and publications do not inherit a non-commercial license
+solely from use of the Software. This does not authorize Commercial Use of
+the Software to produce those outputs or override independently applicable
+rights in included materials.
+
+Publishing results or transferring a model does not grant commercial rights
+in included Software or under the Licensed Patent Claims. Any separate terms
+for data or models still apply.
+
+7.3 Research Model use and onward transfer
+
+By expressly accepting the Research Model Terms, You agree to use Research
+Models created or received under them only for Academic Non-Commercial Use
+unless You first obtain separate written authorization from the Licensor or
+its duly authorized representative. Later commercial deployment, sale,
+licensing for commercial use, or use in a commercial product or service
+requires that authorization even if the model was originally created solely
+for academic research and the later activity no longer uses or includes the
+Software. The commercial activities in section 1 apply equally to Research
+Models. Genuinely independent retraining that satisfies the exclusion in
+section 1 is not subject to this contractual Research Model restriction;
+separate patent and third-party rights remain.
+
+You may share a Research Model for Academic Non-Commercial Use if You:
+  (a) identify the model, its version or checkpoint, its RSSNet-related
+      origin, and the model transferor;
+  (b) supply a Research Model Notice stating that the Research Model
+      Terms of RSSNet License version 1.4 apply, highlighting the
+      later-commercial-use, citation, onward-transfer, liability, and
+      law-and-court terms, and providing a complete copy of this license
+      or a durable, accessible reference to that exact version; and
+  (c) obtain and retain the recipient's express acceptance as specified
+      in section 2.2 before transferring the model.
+Supply a complete copy of the license on request or if the referenced copy
+is inaccessible. The notice must distinguish the model transferor's own
+rights from the Licensor's rights; it must not label independently owned
+model weights as Software solely because this section applies. If a model
+contains Software or Modifications, section 3 also requires the complete
+license and relevant notices to accompany their distribution. The same
+conditions apply to subsequent transfers. The physical-media and delivery
+cost exception in section 3 also applies to these academic transfers.
+
+A Research Model Notice is not a substitute for assent. Publicly posting an
+unrestricted download with a notice alone does not satisfy paragraph (c).
+The notice and acceptance must not falsely claim that the Licensor owns
+independently created model weights or has granted third-party permissions.
+A separate written agreement may expressly replace these conditions for the
+activities it authorizes.
+
+These conditions are contractual obligations of persons who accept them.
+They do not create copyright or patent rights where none exist or
+automatically bind a person who has not agreed to them. They do not apply
+retroactively to models created or received without reliance on this license
+and without acceptance of these conditions. Statutory rights and separate
+permissions remain unaffected. Subject to mandatory applicable law, agreed
+Research Model use, citation, and onward-transfer obligations survive
+termination for models created or received under these terms. Survival of
+obligations does not itself continue a terminated copyright or patent
+permission. The effect on continued model use and reinstatement is stated in
+section 10.3. The warranty, liability, dispute, and accrued-rights
+provisions also survive to the extent relevant to those activities.
+
+8. Ownership and Names
+
+Ownership of the Software and other intellectual property remains with the
+respective rights holders. Rights not expressly granted are reserved. Do not
+misrepresent the origin of the Software or use the names, logos, or
+trademarks of the Licensor, authors, or their institutions to imply
+endorsement or affiliation. Factual attribution is permitted.
+
+9. Warranty and Liability
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE, INCLUDING PROJECT
+MODEL WEIGHTS SUPPLIED BY THE LICENSOR, IS PROVIDED "AS IS" AND "AS
+AVAILABLE", WITHOUT WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, OR RELIABILITY. UNINTERRUPTED OR
+ERROR-FREE OPERATION IS NOT PROMISED.
+
+The Licensor does not provide or warrant a model merely because You create,
+modify, receive, evaluate, or deploy it under the Research Model Terms. For
+Research Models not supplied by the Licensor, the Licensor makes no warranty
+about their performance, safety, accuracy, fitness, or compliance with
+third-party rights. Any express warranty separately provided by the model
+supplier is governed by its own terms.
+
+TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR AND AUTHORS ARE NOT
+LIABLE FOR LOSS OR DAMAGE CAUSED BY THE OPERATION, MODIFICATION, TRAINING,
+EVALUATION, OR DEPLOYMENT OF THE SOFTWARE, OR BY YOUR CREATION,
+MODIFICATION, RECEIPT, USE, OR TRANSFER OF RESEARCH MODELS. THIS LIMITATION
+DOES NOT EXCUSE THE LICENSOR'S BREACH OF AN EXPRESS OBLIGATION IT UNDERTAKES
+IN THIS LICENSE OR A SEPARATE AGREEMENT, OR NEGATE AN EXPRESS PERMISSION
+GRANTED BY THE LICENSOR.
+
+NOTHING IN THIS SECTION EXCLUDES OR LIMITS LIABILITY THAT CANNOT LAWFULLY BE
+EXCLUDED OR LIMITED. THIS INCLUDES LIABILITY FOR PERSONAL INJURY TO THE
+OTHER PARTY OR FOR LOSS OF THAT PARTY'S PROPERTY CAUSED BY INTENTIONAL
+MISCONDUCT OR GROSS NEGLIGENCE WHERE SUCH EXCLUSION OR LIMITATION IS
+PROHIBITED.
+
+10. Termination and Cure
+
+10.1 First inadvertent notice or citation omission
+
+This subsection applies to a first breach consisting solely of an
+inadvertently omitted license, attribution or patent notice, change
+identification, or citation or acknowledgement required by section 3 or 7.1.
+It does not cover intentional removal, concealment, or falsification of
+notices, unauthorized Commercial Use, failure to obtain express acceptance
+for a Research Model transfer, or a separate breach of another requirement.
+A repeated breach is governed by section 10.2.
+
+For a breach qualifying under this subsection, permissions do not terminate
+if You fully correct it before receiving notice or within 30 days after
+receipt of the Licensor's first written notice identifying it. If You do not
+correct it within that period, permissions terminate at the end of the
+period. They are automatically reinstated prospectively when You fully
+correct that omission, even after the 30-day period, provided You have no
+other uncured breach. No separate written reinstatement is required in that
+case. Rights and claims arising during any period of termination remain
+unaffected as stated in section 10.3.
+
+For an already published work that You cannot directly amend, full cure is
+satisfied by requesting a publisher correction where that process is
+available and publishing a clearly linked correction on an accessible author
+page, repository, or comparable public location identifying the work and
+missing citation or acknowledgement. To avoid termination, do so within the
+period above. A publisher's refusal or delay does not prevent cure if You
+have taken these steps; publisher approval or implementation is not
+required.
+
+10.2 Other breaches and reinstatement
+
+Other breaches terminate permissions immediately. Activities requiring those
+permissions must stop. Commercial Use is not authorized by this license and
+must not begin or continue without separate authorization. No cure period
+grants temporary commercial permission.
+
+For a first breach governed by this subsection, permissions are
+automatically reinstated if You cease and fully cure that breach before
+receiving notice or within 30 days after receipt of the Licensor's first
+written notice identifying it, provided You have no other uncured breach.
+After that period, or for a repeated breach, reinstatement requires the
+Licensor's written agreement.
+
+A repeated breach means a new violation of the same requirement after You
+previously cured or obtained reinstatement for a violation of that
+requirement. Section 10.1's automatic reinstatement after late correction
+does not apply to a repeated breach or any other breach governed by this
+subsection.
+
+10.3 Effect on Research Models and accrued rights
+
+Termination stops the permissions granted under sections 2.1 and 4,
+including the patent permission for running Research Models. You may not
+rely on those permissions while they are terminated. Obligations that
+survive under section 7.3 are not a surviving copyright or patent license.
+
+Termination does not transfer ownership of Your independently created model
+or revoke rights You independently own, hold under another valid permission,
+or have under applicable law. If an activity does not require a terminated
+permission, termination alone does not prohibit that activity; the agreed
+Research Model use, citation, and onward-transfer restrictions that survive
+under section 7.3 still apply. Whether running a particular model requires
+patent permission depends on the actual claims, relevant jurisdiction,
+patent status, and applicable exceptions, not merely on its relationship to
+RSSNet.
+
+When permissions are reinstated under section 10.1 or 10.2, the grants in
+sections 2.1 and 4 are restored prospectively within their original scope.
+This includes the academic patent permission for Research Models to the
+extent originally granted. Reinstatement creates no additional rights and
+does not retroactively authorize activities during termination.
+
+Cure or reinstatement does not authorize past Commercial Use or extinguish
+claims arising before cure. Compliant recipients retain their direct
+permissions even if an upstream distributor breaches this license. A
+separate written agreement is governed by its own terms.
+
+11. General Terms and Notices
+
+This license states the permissions and conditions for the materials it
+covers. Additional permissions or exceptions must be provided in writing by
+the relevant rights holder or its authorized representative. An applicable
+separate written agreement governs to the extent it expressly provides
+different permissions or conditions. This license does not revoke or
+restrict rights already validly granted under another license.
+
+Questions, acceptance statements, and permission requests may be sent to the
+project contact in section 5. A breach notice must identify the affected
+version, the relevant conduct and condition, and the means of cure if
+available. Written notices may be delivered by email or another written
+channel to an address provided by the recipient for project or licensing
+communications. Cure periods start on actual receipt, not mere posting of a
+public announcement. This clause does not replace mandatory rules for
+service of court documents. Silence does not grant additional permission.
+
+If a provision is unenforceable, the remaining provisions continue to the
+extent permitted by law. Failure to enforce a provision is not a waiver.
+
+12. Governing Law, Disputes, and Authoritative Language
+
+The contractual permissions and obligations between You and the Licensor
+under this license are governed by the laws of mainland China, excluding its
+conflict-of-laws rules, subject to any mandatory applicable law. This choice
+does not override the law that mandatorily governs the existence, ownership,
+validity, scope, or infringement of intellectual property rights in a
+relevant jurisdiction.
+
+To the extent a valid jurisdiction agreement may be made, You and the
+Licensor agree that disputes between them arising out of these contractual
+permissions and obligations shall be submitted exclusively to the competent
+People's Court at the Licensor's domicile in Tianjin, China. Mandatory
+subject-matter, level, and exclusive-jurisdiction rules remain applicable.
+This clause does not confer authority on a court to decide matters reserved
+by law to another court or administrative authority. A separate written
+agreement may provide a different valid dispute-resolution arrangement.
+
+The English text of version 1.4 is authoritative. Translations, summaries,
+FAQs, and Research Model Notices are aids to understanding and do not amend
+this license. If an inconsistency arises, the English text controls, subject
+to mandatory applicable law and any valid separate agreement.
